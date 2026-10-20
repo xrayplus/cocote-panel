@@ -1,6 +1,6 @@
 #!/bin/bash
 # ============================================================
-#   CHANELOG VPN SCRIPT - REBUILD OS VPS
+#   XRAYPLUS VPN SCRIPT - REBUILD OS VPS
 #   Menjalankan script rebuild OS yang disediakan admin.
 #   SANGAT DESTRUKTIF: install ulang OS, semua data & akun VPN
 #   di VPS ini akan HILANG. Makanya pakai gate konfirmasi ketik

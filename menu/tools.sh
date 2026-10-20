@@ -1,6 +1,6 @@
 #!/bin/bash
 # ============================================================
-#   CHANELOG VPN SCRIPT - MONITOR & TOOLS (ADDON)
+#   XRAYPLUS VPN SCRIPT - MONITOR & TOOLS (ADDON)
 #
 #   Lewat menu  : vpn -> "Monitor & Tools"
 #   Langsung    : bash tools.sh online | kick-ssh <user>
@@ -472,7 +472,7 @@ swap_create() {
 
   grep -qE "^$SWAPFILE[[:space:]]" "$FSTAB" 2>/dev/null || echo "$SWAPFILE none swap sw 0 0" >> "$FSTAB"
   mkdir -p "$SYSCTL_DIR"
-  printf '# Dibuat oleh menu Monitor & Tools (CHANELOG VPN SCRIPT)\nvm.swappiness=10\n' > "$SWAP_SYSCTL"
+  printf '# Dibuat oleh menu Monitor & Tools (XRAYPLUS VPN SCRIPT)\nvm.swappiness=10\n' > "$SWAP_SYSCTL"
   sysctl -w vm.swappiness=10 >/dev/null 2>&1
   echo -e "  ${GREEN}[OK]${NC} Swap ${mb}MB aktif & permanen (swappiness 10: swap dipakai hanya saat RAM mepet)."
 }
@@ -538,7 +538,7 @@ tune_on() {
   local item key val mode cur applied=0 total=0
   mkdir -p "$SYSCTL_DIR"
   : > "$TUNE_PREV"
-  { echo "# Dibuat oleh menu Monitor & Tools (CHANELOG VPN SCRIPT). Matikan lewat menu Tuning OFF."; } > "$TUNE_CONF"
+  { echo "# Dibuat oleh menu Monitor & Tools (XRAYPLUS VPN SCRIPT). Matikan lewat menu Tuning OFF."; } > "$TUNE_CONF"
 
   for item in "${TUNE_LIST[@]}"; do
     IFS='|' read -r key val mode <<< "$item"
@@ -598,7 +598,7 @@ logrotate_apply() {
   fi
   mkdir -p "$(dirname "$LOGROTATE_CONF")"
   cat > "$LOGROTATE_CONF" <<'EOF'
-# Dibuat oleh CHANELOG VPN SCRIPT: log daemon limiter & Xray dirotasi supaya disk tidak penuh.
+# Dibuat oleh XRAYPLUS VPN SCRIPT: log daemon limiter & Xray dirotasi supaya disk tidak penuh.
 /var/log/vpn-*.log /var/log/xray/*.log {
     su root root
     weekly
@@ -619,7 +619,7 @@ EOF
   echo -e "  ${GREEN}[OK]${NC} Log /var/log/vpn-*.log & /var/log/xray/*.log dirotasi mingguan / saat > 20MB (simpan 4)."
 
   mkdir -p "$(dirname "$JOURNALD_CONF")" 2>/dev/null
-  if printf '# Dibuat oleh CHANELOG VPN SCRIPT\n[Journal]\nSystemMaxUse=200M\n' > "$JOURNALD_CONF" 2>/dev/null; then
+  if printf '# Dibuat oleh XRAYPLUS VPN SCRIPT\n[Journal]\nSystemMaxUse=200M\n' > "$JOURNALD_CONF" 2>/dev/null; then
     systemctl restart systemd-journald 2>/dev/null
     echo -e "  ${GREEN}[OK]${NC} Journal systemd dibatasi maksimal 200MB."
   fi

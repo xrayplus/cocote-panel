@@ -1,6 +1,6 @@
 #!/bin/bash
 # ============================================================
-#   CHANELOG VPN SCRIPT - VMESS MENU
+#   XRAYPLUS VPN SCRIPT - VMESS MENU
 # ============================================================
 
 SCRIPT_DIR="/etc/vpn-script"

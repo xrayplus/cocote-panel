@@ -1,6 +1,6 @@
 #!/bin/bash
 # ============================================================
-#   CHANELOG VPN SCRIPT - KEAMANAN (ADDON)
+#   XRAYPLUS VPN SCRIPT - KEAMANAN (ADDON)
 #   Fail2ban (anti brute-force SSH) + Blokir Torrent
 #
 #   Lewat menu  : vpn -> "Keamanan"
@@ -101,7 +101,7 @@ f2b_write_conf() {
 
   mkdir -p "$(dirname "$F2B_CONF")"
   cat > "$F2B_CONF" <<EOF
-# Dibuat oleh menu Keamanan (CHANELOG VPN SCRIPT). Jangan edit manual:
+# Dibuat oleh menu Keamanan (XRAYPLUS VPN SCRIPT). Jangan edit manual:
 # ubah lewat menu (whitelist IP dll), file ini ditulis ulang otomatis.
 [DEFAULT]
 bantime  = 1h

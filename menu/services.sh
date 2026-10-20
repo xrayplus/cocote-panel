@@ -1,6 +1,6 @@
 #!/bin/bash
 # ============================================================
-#   CHANELOG VPN SCRIPT - SERVICE STATUS ON/OFF MENU (ADDON)
+#   XRAYPLUS VPN SCRIPT - SERVICE STATUS ON/OFF MENU (ADDON)
 # ============================================================
 
 SCRIPT_DIR="/etc/vpn-script"

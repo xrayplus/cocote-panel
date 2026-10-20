@@ -1,6 +1,6 @@
 #!/bin/bash
 # ============================================================
-#   CHANELOG VPN SCRIPT - HAProxy Status & Toggle Menu
+#   XRAYPLUS VPN SCRIPT - HAProxy Status & Toggle Menu
 #   Menampilkan status HAProxy SSH-WS SSL dengan ON/OFF toggle
 # ============================================================
 

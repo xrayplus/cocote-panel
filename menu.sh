@@ -1,6 +1,6 @@
 #!/bin/bash
 # ============================================================
-#   CHANELOG VPN TUNNEL MANAGER — PRO EDITION
+#   XRAYPLUS VPN TUNNEL MANAGER — PRO EDITION
 # ============================================================
 
 SCRIPT_DIR="/etc/vpn-script"
@@ -46,8 +46,8 @@ show_header() {
   fi
 
   echo -e "${CYAN}$UI_BOX_TOP${NC}"
-  ui_line_center "${WHITE}${BOLD}CHANELOG VPN TUNNEL MANAGER${NC}"
-  ui_line_center "${DIM}${PURPLE}by chanelog${NC}"
+  ui_line_center "${WHITE}${BOLD}XRAYPLUS VPN TUNNEL MANAGER${NC}"
+  ui_line_center "${DIM}${PURPLE}by xrayplus${NC}"
   echo -e "${CYAN}$UI_BOX_MID${NC}"
   ui_kv "Domain"        "$domain"
   ui_kv "IP VPS"        "$ip"

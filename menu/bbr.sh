@@ -1,6 +1,6 @@
 #!/bin/bash
 # ============================================================
-#   CHANELOG VPN SCRIPT - BBR & IPv6 ON/OFF MENU (ADDON)
+#   XRAYPLUS VPN SCRIPT - BBR & IPv6 ON/OFF MENU (ADDON)
 #
 #   Lewat menu  : vpn  -> pilih "BBR & IPv6"
 #   Langsung    : bash bbr.sh status
@@ -121,7 +121,7 @@ bbr_enable() {
 
   mkdir -p "$SYSCTL_DIR" "$MODULES_LOAD_DIR"
   cat > "$BBR_CONF" <<EOF
-# Dibuat oleh menu BBR (CHANELOG VPN SCRIPT).
+# Dibuat oleh menu BBR (XRAYPLUS VPN SCRIPT).
 # Hapus lewat menu "BBR OFF", jangan edit manual.
 net.core.default_qdisc=fq
 net.ipv4.tcp_congestion_control=bbr
@@ -209,7 +209,7 @@ ipv6_disable() {
 
   mkdir -p "$SYSCTL_DIR"
   cat > "$IPV6_CONF" <<EOF
-# Dibuat oleh menu IPv6 (CHANELOG VPN SCRIPT).
+# Dibuat oleh menu IPv6 (XRAYPLUS VPN SCRIPT).
 # Hapus lewat menu "IPv6 ON", jangan edit manual.
 net.ipv6.conf.all.disable_ipv6=1
 net.ipv6.conf.default.disable_ipv6=1

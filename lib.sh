@@ -1,6 +1,6 @@
 #!/bin/bash
 # ============================================================
-#   CHANELOG VPN SCRIPT - LIBRARY FUNCTIONS (ALL-IN-ONE)
+#   XRAYPLUS VPN SCRIPT - LIBRARY FUNCTIONS (ALL-IN-ONE)
 #   Supports: VMess, VLess, Trojan, Shadowsocks, SSH-WS, HAProxy
 # ============================================================
 
@@ -1361,7 +1361,7 @@ regenerate_nginx_conf() {
 
   cat > "$conf" <<EOF2
 # ============================================================
-#   CHANELOG VPN - NGINX ALL-IN-ONE CONFIG (regenerated)
+#   XRAYPLUS VPN - NGINX ALL-IN-ONE CONFIG (regenerated)
 #   Port 80  : VMess nTLS | VLess nTLS | SSH-WS nTLS | SSH-WS-SSH nTLS
 #   Port 443 : VMess TLS | VLess TLS | Trojan TLS | SS TLS
 #              VMess gRPC | VLess gRPC | Trojan gRPC | SS gRPC

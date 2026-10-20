@@ -1,6 +1,6 @@
 #!/bin/bash
 # ============================================================
-#   CHANELOG VPN SCRIPT - SHADOWSOCKS MENU
+#   XRAYPLUS VPN SCRIPT - SHADOWSOCKS MENU
 # ============================================================
 
 SCRIPT_DIR="/etc/vpn-script"

@@ -1,6 +1,6 @@
 #!/bin/bash
 # ============================================================
-#   CHANELOG VPN SCRIPT - TROJAN MENU
+#   XRAYPLUS VPN SCRIPT - TROJAN MENU
 # ============================================================
 
 SCRIPT_DIR="/etc/vpn-script"

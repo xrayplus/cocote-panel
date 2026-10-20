@@ -1,6 +1,6 @@
 #!/bin/bash
 # ============================================================
-#   CHANELOG VPN SCRIPT - BOT TELEGRAM & LIMIT AKUN (MENU UTAMA)
+#   XRAYPLUS VPN SCRIPT - BOT TELEGRAM & LIMIT AKUN (MENU UTAMA)
 #   Pengaturan notifikasi Telegram + default limit device/IP
 #   + default limit kuota utk semua protokol (SSH-WS & Xray)
 # ============================================================

@@ -1,6 +1,6 @@
 #!/bin/bash
 # ============================================================
-#   CHANELOG VPN SCRIPT - OPENVPN (ADDON)
+#   XRAYPLUS VPN SCRIPT - OPENVPN (ADDON)
 #
 #   OpenVPN TCP + UDP yang login-nya memakai AKUN SSH YANG SAMA
 #   (username & password dari menu SSH). Jadi tidak ada database
@@ -160,7 +160,7 @@ write_server_conf() { # name proto port net mgmt_port
 
   mkdir -p "$OVPN_SERVER_DIR"
   cat > "$OVPN_SERVER_DIR/$name.conf" <<EOF
-# Dibuat oleh menu OpenVPN (CHANELOG VPN SCRIPT) -- jangan edit manual,
+# Dibuat oleh menu OpenVPN (XRAYPLUS VPN SCRIPT) -- jangan edit manual,
 # ubah lewat menu (install ulang).
 port $port
 proto $proto
@@ -245,7 +245,7 @@ ovpn_nat_remove() {
 write_nat_unit() {
   cat > "$NAT_UNIT" <<EOF
 [Unit]
-Description=NAT & firewall OpenVPN (CHANELOG VPN SCRIPT)
+Description=NAT & firewall OpenVPN (XRAYPLUS VPN SCRIPT)
 After=network-online.target
 Wants=network-online.target
 
@@ -450,7 +450,7 @@ PYEOF
 write_ws_unit() {
   cat > "$WS_UNIT" <<EOF
 [Unit]
-Description=OpenVPN over WebSocket bridge (CHANELOG VPN SCRIPT)
+Description=OpenVPN over WebSocket bridge (XRAYPLUS VPN SCRIPT)
 After=network.target
 
 [Service]
@@ -466,7 +466,7 @@ EOF
 write_ngx_snippet() {
   mkdir -p "$(dirname "$NGX_SNIPPET")"
   cat > "$NGX_SNIPPET" <<EOF
-# Dibuat oleh menu OpenVPN (CHANELOG VPN SCRIPT)
+# Dibuat oleh menu OpenVPN (XRAYPLUS VPN SCRIPT)
 location $WS_PATH {
     proxy_redirect off;
     proxy_pass http://127.0.0.1:$WS_PORT;
@@ -716,7 +716,7 @@ ovpn_install() {
 
   info "Mengaktifkan IP forwarding & NAT..."
   mkdir -p "$SYSCTL_DIR"
-  printf '# Dibuat oleh menu OpenVPN (CHANELOG VPN SCRIPT)\nnet.ipv4.ip_forward=1\n' > "$SYSCTL_DIR/99-vpn-openvpn.conf"
+  printf '# Dibuat oleh menu OpenVPN (XRAYPLUS VPN SCRIPT)\nnet.ipv4.ip_forward=1\n' > "$SYSCTL_DIR/99-vpn-openvpn.conf"
   sysctl -p "$SYSCTL_DIR/99-vpn-openvpn.conf" >/dev/null 2>&1
   write_nat_unit
   systemctl daemon-reload 2>/dev/null

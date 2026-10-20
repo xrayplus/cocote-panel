@@ -1,6 +1,6 @@
 #!/bin/bash
 # ============================================================
-#   CHANELOG VPN SCRIPT - SSH / SSH-WS / SSH-SSL MENU (ADDON)
+#   XRAYPLUS VPN SCRIPT - SSH / SSH-WS / SSH-SSL MENU (ADDON)
 #   Multi-port: 80, 8880, 8080, 2080, 2082 (nTLS) + 443 (TLS)
 # ============================================================
 

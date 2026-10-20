@@ -1,6 +1,6 @@
 #!/bin/bash
 # ============================================================
-#   CHANELOG VPN SCRIPT - UPDATE SCRIPT MENU (ADDON)
+#   XRAYPLUS VPN SCRIPT - UPDATE SCRIPT MENU (ADDON)
 # ============================================================
 
 SCRIPT_DIR="/etc/vpn-script"

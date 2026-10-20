@@ -1,6 +1,6 @@
 #!/bin/bash
 # ============================================================
-#   CHANELOG VPN SCRIPT - VLESS MENU (ALL-IN-ONE)
+#   XRAYPLUS VPN SCRIPT - VLESS MENU (ALL-IN-ONE)
 #   Supports: WS (TLS + nTLS) + gRPC (TLS)
 # ============================================================
 
